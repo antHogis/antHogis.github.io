@@ -65,7 +65,6 @@
 .Welcome {
   display: flex;
   align-items: stretch;
-  min-width: 720px;
 }
 
 .Welcome img {
@@ -95,20 +94,32 @@
   display: flex;
   justify-content: center;
   align-items: stretch;
+
 }
 
 .NavItem {
   color:white;
   font-size: 2em;
-  border: 1px #333333 solid;
+  /*border: 1px #333333 solid;*/
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.NavItem:first-child {
+  border-right: 1px #333 solid;
+}
+
+.NavItem:last-child {
+  border-left: 1px #333 solid;
+}
+
 .NavItem:hover {
   background-color: #333333;
+  -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);   
 }
 
 .InfoContent {
